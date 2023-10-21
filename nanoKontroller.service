@@ -1,0 +1,9 @@
+[Unit]
+Description=Midi Mixer Control
+
+[Service]
+ExecStartPre=/bin/sleep 5
+ExecStart=/home/alex/nanoKontroller/nanoKontroller -d
+
+[Install]
+WantedBy=default.target
